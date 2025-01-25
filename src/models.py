@@ -5,6 +5,18 @@ from enum import StrEnum
 from pydantic import BaseModel
 
 
+class FileForObject(StrEnum):
+    car = "/cars.txt"
+    model = "/models.txt"
+    sale = "/sales.txt"
+
+
+class FileIndexForObject(StrEnum):
+    car = "/cars_index.txt"
+    model = "/models_index.txt"
+    sale = "/sales_index.txt"
+
+
 class CarStatus(StrEnum):
     available = "available"
     reserve = "reserve"
